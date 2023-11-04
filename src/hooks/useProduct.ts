@@ -7,6 +7,12 @@ import product from "../data/product";
 //   name: string;
 // }
 
+export interface Brand {
+
+    id?: number;
+    name?: string
+
+}
 export interface Photo {
     id: number,
     productId: number,
@@ -24,8 +30,11 @@ export interface Option {
 export interface Product {
     id: number;
     name: string;
+
     // options: Option;
-    photos: Photo[]
+    photos: Photo[];
+    brand: Brand;
+
 
 
 }

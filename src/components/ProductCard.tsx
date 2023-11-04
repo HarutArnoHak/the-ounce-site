@@ -8,9 +8,14 @@ interface Props {
 const ProductCard = ({ product }: Props) => {
   return (
     <Card>
-      <Image objectFit={"cover"} src={product.photos[0]?.fullPath} />
+      <Image
+        boxSize="200px"
+        objectFit={"fill"}
+        src={product.photos[0]?.fullPath}
+      />
       <CardBody>
-        <Heading fontSize={"2xl"}>{product.name}</Heading>
+        <Heading fontSize={"2xl"}>{product.brand.name}</Heading>
+        <Heading fontSize={"md"}>{product.name}</Heading>
       </CardBody>
     </Card>
   );
