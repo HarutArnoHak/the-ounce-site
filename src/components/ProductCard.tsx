@@ -1,13 +1,10 @@
 import {
   Box,
-  Button,
   Card,
   CardBody,
-  CardFooter,
-  HStack,
   Heading,
   Image,
-  Stack,
+  HStack,
   Text,
 } from "@chakra-ui/react";
 import { Product } from "../hooks/useProduct";
