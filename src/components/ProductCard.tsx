@@ -33,11 +33,13 @@ const ProductCard = ({ product }: Props) => {
           </Text>
           <Heading size="sm">{product.name}</Heading>
 
-          <Text py="2"></Text>
+          <Text>{product.options[0].inventory.amount}</Text>
         </CardBody>
       </HStack>
     </Card>
   );
+
+  return null;
 };
 
 export default ProductCard;
