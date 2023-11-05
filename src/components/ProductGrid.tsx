@@ -11,8 +11,7 @@ const ProductGrid = () => {
       <Box height={90}></Box>
       <SimpleGrid columns={{ sm: 1, md: 2, lg: 2, xl: 3 }} spacing={3}>
         {products.map((product) =>
-          product.options[0].inventory.hasOwnProperty("amount") &&
-          Number(product.options[0].inventory.amount) > 3 ? (
+          product.options[0].inventory.hasOwnProperty("amount") ? (
             <ProductCardContainer key={product.id}>
               <ProductCard product={product}></ProductCard>
             </ProductCardContainer>
