@@ -1,21 +1,10 @@
-import {
-  Box,
-  Divider,
-  Flex,
-  HStack,
-  Image,
-  Show,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, Divider, HStack, Image, Show, VStack } from "@chakra-ui/react";
 
 import HamburgerMenu from "./HamburgerMenu";
 import ounceLogo from "../assets/ounceLogo.webp";
 //import { ColorModeSwitch } from "./ColorModeSwitch";
 //import SearchInput from "./SearchInput";
-interface Props {
-  onSearch: (searchText: string) => void;
-}
+
 const NavBar = () => {
   return (
     <>

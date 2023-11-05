@@ -1,5 +1,5 @@
-import { Card, CardBody, Heading, Image, Text } from "@chakra-ui/react";
-import useProduct, { Product } from "../hooks/useProduct";
+import { Card, CardBody, Heading, Image } from "@chakra-ui/react";
+import { Product } from "../hooks/useProduct";
 
 interface Props {
   product: Product;

@@ -1,13 +1,4 @@
-import {
-  Box,
-  Center,
-  Flex,
-  Grid,
-  GridItem,
-  HStack,
-  Show,
-  Text,
-} from "@chakra-ui/react";
+import { Flex, Grid, GridItem, Show } from "@chakra-ui/react";
 
 import ProductGrid from "./components/ProductGrid";
 import NavBar from "./components/NavBar";

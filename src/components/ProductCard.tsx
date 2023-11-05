@@ -8,7 +8,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-import useProduct, { Product } from "../hooks/useProduct";
+import { Product } from "../hooks/useProduct";
 
 interface Props {
   product: Product;
