@@ -8,7 +8,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { Product } from "../hooks/useProduct";
-
+import noProdImage from "../assets/noProductImage.png";
 interface Props {
   product: Product;
 }
@@ -23,17 +23,26 @@ const ProductCard = ({ product }: Props) => {
             margin={0}
             objectFit="cover"
             maxW={{ base: "100%", sm: "200px" }}
-            src={product.photos[0]?.fullPath}
+            src={
+              product.photos.length > 0
+                ? product.photos[0].fullPath
+                : noProdImage
+            }
             alt={product.name}
           />
         </Box>
         <CardBody>
           <Text py="2" color="ButtonFace" align={"start"}>
-            {product.brand?.name}
+            {product.brand?.name}" "{product.primaryCategory.name}
           </Text>
           <Heading size="sm">{product.name}</Heading>
 
-          <Text>{product.options[0].inventory.amount}</Text>
+          <Text>
+            {Number(product.options[0].inventory.amount) > 3
+              ? product.options[0].inventory.amount
+              : "Out Of Stock"}
+          </Text>
+          <Text>{product.description}</Text>
         </CardBody>
       </HStack>
     </Card>

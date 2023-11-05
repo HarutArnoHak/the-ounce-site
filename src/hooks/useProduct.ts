@@ -23,7 +23,9 @@ export interface Option {
   price: number;
   inventory: Inventory;
 }
-
+interface Category {
+  name: string;
+}
 export interface Product {
   id: number;
   name: string;
@@ -32,6 +34,8 @@ export interface Product {
   photos: Photo[];
   brand: Brand;
   isActive: boolean;
+  description?: string | null;
+  primaryCategory: Category;
 }
 
 const useProduct = () => ({ products: product });
