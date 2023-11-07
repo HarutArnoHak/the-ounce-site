@@ -42,7 +42,7 @@ const ProductCard = ({ product }: Props) => {
               ? product.options[0].inventory.amount
               : "Out Of Stock"}
           </Text>
-          <Text>{product.description}</Text>
+          {/* <Text>{product.description}</Text> */}
         </CardBody>
       </HStack>
     </Card>
